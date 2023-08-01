@@ -10,10 +10,10 @@
     <form action="">
     <h1> Travel Reservaion Form </h1>
     <p> Full name*: 
-        <br><input type="text" placeholder="Full name">
+        <br><input type="text" placeholder="Full name" required>
     </p>
     <p> Email address*:
-        <br><input type="Email address" placeholder="Email_address">    
+        <br><input type="email" placeholder="Email_address" required>    
     </p>
     <p> Select Tour Package*:
     <br><select>
@@ -24,11 +24,11 @@
     </select>
 </p>
 <p> Arrivel date*: 
-    <br> <input type="date">
+    <br> <input type="date" required>
 </p>
 
 <p> Number of persons*:
-<br> <input type="number" placeholder="Unknown_type">
+<br> <input type="number" placeholder="Unknown_type" required>
 <p> What would you want to avail?*
 
 <br> Boarding <input type="checkbox">
@@ -36,11 +36,11 @@
 <br> Sight seeing <input type="checkbox">
 </p>
 <p>Discount Coupon code:
-<br> <input type="text" placeholder="Unknown_type">
+<br> <input type="text" placeholder="Unknown_type"  pattern="[A-Za-z]{6}">
 </p>
 <p> Terms and conditions*
-<br> <input type="radio"> I agree <input type="radio"> I disagree
-<br> <input type="submit" value="complete reservation">
+<br> <input type="radio" name="radio"> I agree <input type="radio" name="radio" required> I disagree
+<br> <input type="submit" required>
 </p>
 </form>
 </body>
